@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Individu 2 - DOM</title>
+    <style>
+        # Contoh class untuk mengubah tampilan (Ketentuan 4: Gunakan classList, bukan style inline) */
+        .highlight {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+        .habis {
+            color: red;
+            text-decoration: line-through;
+        }
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .card { border: 1px solid #ccc; padding: 10px; margin-bottom: 5px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>Daftar Produk Toko</h1>
+
+    <!-- Interaksi 1: Input Pencarian -->
+    <input type="text" id="inputPencarian" placeholder="Cari produk...">
+    <button id="btnToggle">Ubah Mode Tampilan</button>
+
+    <!-- Tempat menampilkan data array of object (Ketentuan 1) -->
+    <div id="daftarProduk" style="margin-top: 15px;"></div>
+
+    <hr>
+
+    <!-- Form dengan validasi input dan preventDefault() (Ketentuan 3) -->
+    <h3>Tambah Produk Baru</h3>
+    <form id="formProduk">
+        <input type="text" id="namaBaru" placeholder="Nama Produk" required><br><br>
+        <input type="number" id="hargaBaru" placeholder="Harga Produk" required><br><br>
+        <input type="number" id="stokBaru" placeholder="Stok Produk" required><br><br>
+        <button type="submit">Simpan Produk</button>
+    </form>
+
+    <!-- Hubungkan file script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
